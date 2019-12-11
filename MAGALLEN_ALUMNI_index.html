@@ -1,69 +1,158 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Magallen WebDev_Act05</title>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="assets/css/MAGALLEN_ALUMNI_style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="assets/css/MAGALLEN_ALUMNI_style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.11.2/css/all.css">
 
-        <!-- Icons -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    </head>
-    <body> 
+    <link rel="shortcut icon" href="Resources/myuicportal-1.png" />
 
-        <div class="topnav">
-            <img class="myUIC-nav" src="Resources/myuicportal-1.png">
-            <div class="topnav-right">
-                <div class="nav-search">
-                    <form method="POST" action="#">
-                        <input type="text" class="form-search" placeholder="Search..."><i class="fa fa-fw fa-search"></i>
-                    </form>
-                </div>
-                <img class="nav-profile" src="Resources/People-Avatar-Set-Rectangular-09.png">
-            </div>
+    <title>ALUMNI SOCIAL NETWORKING SITE</title>
+    
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img class="navbar-logo" src="Resources/myuicportal-1.png" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <input class="form-control border-top-0 border-right-0 border-left-0 navbar-search" type="text" placeholder="Search" aria-label="Search">
+                </li>
+            </ul>
+            <a class="navbar-brand" href="#">
+                <img class="navbar-logo" src="Resources/People-Avatar-Set-Rectangular-09.png" alt="profile">
+            </a>
         </div>
+    </nav>
 
-        <div class="main-container">
-            <div class="menu">
-                <h2>Course's</h2>
-                <a href="#">Information Technology</a>
-                <a href="#">Medical Laboratory Science</a>
-                <a href="#">Humanities and Management</a>
-                <a href="#">Arts and Humanities</a>
-            </div>
-            
-            <div class="main">
-                <h2>Content Here </h2>
-                <p>Social Network Content Here</p>
-            </div>
-            
-            <div class="right">
-                <div class="profile">
-                    <div style="position: relative">
-                        <img src="Resources/People-Avatar-Set-Rectangular-1.png">
-                        <div class="profile-name">
-                            <h3 title="Verified User">Klai Reyes <i class="fa fa-check-circle" aria-hidden="true"></i></h3>
-                            <p class="profile-course">Information Technology</p>
+    <div class="container-fluid p-2 bd-highlight">
+        <div class="row justify-content-md-center">
+<!-- Menu Area  -->
+            <div class="col">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col border-0">
+                            <div class="card border-0">
+                                <div class="card-body border-0">
+                                    <h5 class="card-title">Menu</h5>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="profile-reward">
-                        <div>Questions: </div>
-                        <div class="item-right">15</div>
-                        <div>Points: </div>
-                        <div class="item-right">368</div>
-                    </div>
-                    <div class="user-status">STUDENT</div>
                 </div>
-                
+            </div>
+<!-- Content Area  -->
+            <div class="col-6">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col border-0">
+                            <div class="card ">
+                                <div class="card-header col border-0">
+                                    Add Question
+                                </div>
+                                <div class="card-body">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-1 text-left">
+                                                <img src="Resources/People-Avatar-Set-Rectangular-1.png" alt="user-profile" class="rounded mx-auto d-block" style="width: 50px;">
+                                            </div>
+                                            <div class="col-11">
+                                                <form>
+                                                    <div class="form-group">
+                                                        <textarea class="form-control border-0" placeholder="Add New Question" rows="3"></textarea>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col">
+                                            </div>
+                                            <div class="col-md-auto">
+                                                <a href="javascript:void()" class="btn btn-link text-muted">Cancel</a>
+                                            </div>
+                                            <div class="col col-lg-3">
+                                                <a href="javascript:void()" class="btn btn-success">Add Question</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!-- Profile Section  -->
+            <div class="col">
+                <div class="container">
+                    <div class="row">
+                        <div class="col border-0">
+                            <div class="card border-0" style="width: 18rem;">
+                                <div class="card-body">
+                                    <div class="row px-md-2">
+                                        <div class="col-4 text-left">
+                                            <img src="Resources/People-Avatar-Set-Rectangular-1.png" alt="user-profile" class="rounded-circle">
+                                        </div>
+                                        <div class="col text-left mx-auto">
+                                            <h5 class="card-title" title="Verified User">Klai Reyes <i class="fas fa-badge-check text-success"></i></h5>
+                                            <p class="small profile-course">Information Technology</p>
+                                            <p class="profile-course">
+                                                <i class="far fa-trophy-alt text-secondary" title="Student of the Month !"></i>
+                                                <i class="fas fa-trophy-alt text-success" title="Enthusiast Poster"></i>
+                                                <i class="fas fa-medal text-warning" title="People's choice awards"></i>
+                                                <i class="fas fa-award text-info" title="Keep on posting !"></i>
+                                            </p>
+                                        </div>
+                                        <div class="w-100 text-light">.</div>
+                                        <div class="col-6 text-left font-weight-bold">Questions:</div>
+                                        <div class="col text-right">15</div>
+                                        <div class="col-6 text-left font-weight-bold">Points:</div>
+                                        <div class="col text-right">365</div>
+                                        <div class="w-100 text-light">.</div>
+                                        <div class="w-100 btn btn-success text-center">STUDENT</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-100 text-light">.</div>
+                        <div class="col">
+                            <div class="card" style="width: 18rem;">
+                                <div class="card-header">
+                                    <i class="fab fa-hotjar text-danger"></i> Hot Topic
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Cras justo odio</li>
+                                <li class="list-group-item">Dapibus ac facilisis in</li>
+                                <li class="list-group-item">Vestibulum at eros</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-            
+    </div>
 
-        <div class="footer">
-            Copyright © 2014 UIC - IT Development and Incubation Facility Unit, MIS Office
-        </div>
-        <!-- script area -->
-        <script src="assets/js/MAGALLEN_ALUMNI_script.js"></script>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+    <!-- Icons -->
+    <!-- <script src="https://kit.fontawesome.com/ec32265807.js" crossorigin="anonymous"></script> -->
 
-    </body>
+</body>
 </html>
