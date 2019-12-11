@@ -71,7 +71,7 @@
                                             <div class="col-11">
                                                 <form>
                                                     <div class="form-group">
-                                                        <textarea class="form-control border-0" placeholder="Add New Question" rows="3"></textarea>
+                                                        <textarea class="form-control border-0" id="post-question" placeholder="Add New Question" rows="3"></textarea>
                                                     </div>
                                                 </form>
                                             </div>
@@ -177,7 +177,18 @@
 
     <script>
         function confirmDialog(){
-            Swal.fire({
+
+            var question = document.getElementById("post-question").value;
+
+            if(question === ""){
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Looks like you dont have any question to ask!',
+                    footer: '<a href>Why do I have this issue?</a>'
+                })
+            }else{
+                Swal.fire({
                 title: 'Are you sure?',
                 text: "You want to post this question publicly?",
                 icon: 'warning',
@@ -192,8 +203,11 @@
                         'Your question has been post.',
                         'success'
                         )
+                        // Clear input field
+                        document.getElementById("post-question").value = "";
                     }
                 })
+            }
         }
     </script>
 </body>
