@@ -18,75 +18,79 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">
-            <img class="navbar-logo" src="Resources/myuicportal-1.png" alt="Logo">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="nav navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <input class="form-control border-top-0 border-right-0 border-left-0 navbar-search" type="text" placeholder="Search" aria-label="Search">
-                </li>
-            </ul>
-            <a class="navbar-brand" href="#">
-                <img class="navbar-logo" src="Resources/People-Avatar-Set-Rectangular-09.png" alt="profile">
-            </a>
-        </div>
-    </nav>
 
-    <div class="container-fluid p-2 bd-highlight">
-        <div class="row justify-content-md-center">
-<!-- Menu Area  -->
-            <div class="col">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col border-0">
-                            <div class="card border-0">
-                                <div class="card-body border-0">
-                                    <h5 class="card-title">Menu</h5>
+    <div class="page">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <img class="navbar-logo" src="Resources/myuicportal-1.png" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <input class="form-control border-top-0 border-right-0 border-left-0 navbar-search" type="text" placeholder="Search" aria-label="Search">
+                    </li>
+                </ul>
+                <a class="navbar-brand" href="#">
+                    <img class="navbar-logo" src="Resources/People-Avatar-Set-Rectangular-09.png" alt="profile">
+                </a>
+            </div>
+        </nav>
+
+        <div class="container-fluid p-2 bd-highlight">
+            <div class="row justify-content-md-center">
+    <!-- Menu Area  -->
+                <div class="col">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col border-0">
+                                <div class="card border-0">
+                                    <div class="card-body border-0">
+                                        <h5 class="card-title">Menu</h5>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-<!-- Content Area  -->
-            <div class="col-6">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col border-0">
-                            <div class="card ">
-                                <div class="card-header col border-0">
-                                    Add Question
-                                </div>
-                                <div class="card-body">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-1 text-left">
-                                                <img src="Resources/People-Avatar-Set-Rectangular-1.png" alt="user-profile" class="rounded mx-auto d-block" style="width: 50px;">
+    <!-- Content Area  -->
+                <div class="col-6">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col border-0">
+                                <div class="card ">
+                                    <div class="card-header col border-0">
+                                        Add Question
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-1 text-left">
+                                                    <img src="Resources/People-Avatar-Set-Rectangular-1.png" alt="user-profile" class="rounded mx-auto d-block" style="width: 50px;">
+                                                </div>
+                                                <div class="col-11">
+                                                    <form>
+                                                        <div class="form-group">
+                                                            <textarea class="form-control border-0" id="post-question" placeholder="Add New Question" rows="3"></textarea>
+                                                        </div>
+                                                    </form>
+                                                </div>
                                             </div>
-                                            <div class="col-11">
-                                                <form>
-                                                    <div class="form-group">
-                                                        <textarea class="form-control border-0" id="post-question" placeholder="Add New Question" rows="3"></textarea>
-                                                    </div>
-                                                </form>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col col-lg-1">
-                                            </div>
-                                            <div class="col">
-                                                <p class="text-muted">Visiblity: <a href="javascript:void()"> <i class="fas fa-globe"></i> Public</a></p>
-                                            </div>
-                                            <div class="col-md-auto">
-                                                <a href="javascript:void()" class="btn btn-link text-muted">Cancel</a>
-                                            </div>
-                                            <div class="col col-lg-3">
-                                                <a href="javascript:confirmDialog()" class="btn btn-success">Add Question</a>
+                                            <div class="row">
+                                                <div class="col col-lg-1">
+                                                </div>
+                                                <div class="col">
+                                                    <p class="text-muted">Visiblity: <a href="javascript:void()"> <i class="fas fa-globe"></i> Public</a></p>
+                                                </div>
+                                                <div class="col-md-auto">
+                                                    <a href="javascript:void()" class="btn btn-link text-muted">Cancel</a>
+                                                </div>
+                                                <div class="col col-lg-3">
+                                                    <a href="javascript:confirmDialog()" class="btn btn-success">Add Question</a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -95,69 +99,69 @@
                         </div>
                     </div>
                 </div>
-            </div>
-<!-- Profile Section  -->
-            <div class="col">
-                <div class="container">
-                    <div class="row">
-                        <div class="col border-0">
-                            <div class="card border-0" style="width: 18rem;">
-                                <div class="card-body">
-                                    <div class="row px-md-2">
-                                        <div class="col-4 text-left">
-                                            <img src="Resources/People-Avatar-Set-Rectangular-1.png" alt="user-profile" class="rounded-circle">
+    <!-- Profile Section  -->
+                <div class="col">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col border-0">
+                                <div class="card border-0" style="width: 18rem;">
+                                    <div class="card-body">
+                                        <div class="row px-md-2">
+                                            <div class="col-4 text-left">
+                                                <img src="Resources/People-Avatar-Set-Rectangular-1.png" alt="user-profile" class="rounded-circle">
+                                            </div>
+                                            <div class="col text-left mx-auto">
+                                                <h5 class="card-title" title="Verified User">Klai Reyes <i class="fas fa-badge-check text-success"></i></h5>
+                                                <p class="small profile-course">Information Technology</p>
+                                                <p class="profile-course">
+                                                    <i class="far fa-trophy-alt text-secondary" title="Student of the Month !"></i>
+                                                    <i class="fas fa-trophy-alt text-success" title="Enthusiast Poster"></i>
+                                                    <i class="fas fa-medal text-warning" title="People's choice awards"></i>
+                                                    <i class="fas fa-award text-info" title="Keep on posting !"></i>
+                                                </p>
+                                            </div>
+                                            <div class="w-100 text-light">.</div>
+                                            <div class="col-6 text-left font-weight-bold">Questions:</div>
+                                            <div class="col text-right">15</div>
+                                            <div class="col-6 text-left font-weight-bold">Points:</div>
+                                            <div class="col text-right">365</div>
+                                            <div class="w-100 text-light">.</div>
+                                            <div class="w-100 btn text-center text-white" style="background-color: #AC1540;">STUDENT</div>
                                         </div>
-                                        <div class="col text-left mx-auto">
-                                            <h5 class="card-title" title="Verified User">Klai Reyes <i class="fas fa-badge-check text-success"></i></h5>
-                                            <p class="small profile-course">Information Technology</p>
-                                            <p class="profile-course">
-                                                <i class="far fa-trophy-alt text-secondary" title="Student of the Month !"></i>
-                                                <i class="fas fa-trophy-alt text-success" title="Enthusiast Poster"></i>
-                                                <i class="fas fa-medal text-warning" title="People's choice awards"></i>
-                                                <i class="fas fa-award text-info" title="Keep on posting !"></i>
-                                            </p>
-                                        </div>
-                                        <div class="w-100 text-light">.</div>
-                                        <div class="col-6 text-left font-weight-bold">Questions:</div>
-                                        <div class="col text-right">15</div>
-                                        <div class="col-6 text-left font-weight-bold">Points:</div>
-                                        <div class="col text-right">365</div>
-                                        <div class="w-100 text-light">.</div>
-                                        <div class="w-100 btn text-center text-white" style="background-color: #AC1540;">STUDENT</div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="w-100 text-light">.</div>
-                        <div class="col">
-                            <div class="card border-0" style="width: 18rem;">
-                                <div class="card-header text-center">
-                                    <i class="fab fa-hotjar text-danger"></i> Hot Topic
+                            <div class="w-100 text-light">.</div>
+                            <div class="col">
+                                <div class="card border-0" style="width: 18rem;">
+                                    <div class="card-header text-center">
+                                        <i class="fab fa-hotjar text-danger"></i> Hot Topic
+                                    </div>
+                                    <ul class="list-group list-group-flush small">
+                                        <li class="list-group-item">
+                                            <a href="javascript:void()" class="text-dark">
+                                            What is meant by information technology?
+                                            </a> 
+                                            <br />
+                                            <span class="badge badge-primary">153 Answers</span> - 32mins ago
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="javascript:void()" class="text-dark">
+                                            What are the types of information technology? 
+                                            </a>
+                                            <br />
+                                            <span class="badge badge-primary">121 Answers</span> - 43mins ago
+                                        </li>
+                                        <li class="list-group-item">
+                                            <a href="javascript:void()" class="text-dark">
+                                            What is the actual meaning of information technology? 
+                                            </a>
+                                            <br />
+                                            <span class="badge badge-primary">76 Answers</span> - 3w ago
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </div>
-                                <ul class="list-group list-group-flush small">
-                                    <li class="list-group-item">
-                                        <a href="javascript:void()" class="text-dark">
-                                        What is meant by information technology?
-                                        </a> 
-                                        <br />
-                                        <span class="badge badge-primary">153 Answers</span> - 32mins ago
-                                    </li>
-                                    <li class="list-group-item">
-                                        <a href="javascript:void()" class="text-dark">
-                                        What are the types of information technology? 
-                                        </a>
-                                        <br />
-                                        <span class="badge badge-primary">121 Answers</span> - 43mins ago
-                                    </li>
-                                    <li class="list-group-item">
-                                        <a href="javascript:void()" class="text-dark">
-                                        What is the actual meaning of information technology? 
-                                        </a>
-                                        <br />
-                                        <span class="badge badge-primary">76 Answers</span> - 3w ago
-                                        </a>
-                                    </li>
-                                </ul>
                             </div>
                         </div>
                     </div>
@@ -165,6 +169,12 @@
             </div>
         </div>
     </div>
+
+    <!-- Loading settings  -->
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -174,41 +184,6 @@
     
     <!-- SweetAlert -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
-
-    <script>
-        function confirmDialog(){
-
-            var question = document.getElementById("post-question").value;
-
-            if(question === ""){
-                Swal.fire({
-                    icon: 'error',
-                    title: 'Oops...',
-                    text: 'Looks like you dont have any question to ask!',
-                    footer: '<a href>Why do I have this issue?</a>'
-                })
-            }else{
-                Swal.fire({
-                title: 'Are you sure?',
-                text: "You want to post this question publicly?",
-                icon: 'warning',
-                showCancelButton: true,
-                confirmButtonColor: '#3085d6',
-                cancelButtonColor: '#FFFFF',
-                confirmButtonText: 'Yes, post it!'
-                }).then((result) => {
-                    if (result.value) {
-                        Swal.fire(
-                        'Hooraay!',
-                        'Your question has been post.',
-                        'success'
-                        )
-                        // Clear input field
-                        document.getElementById("post-question").value = "";
-                    }
-                })
-            }
-        }
-    </script>
+    <script src="assets/js/MAGALLEN_ALUMNI_script.js"></script>
 </body>
 </html>
