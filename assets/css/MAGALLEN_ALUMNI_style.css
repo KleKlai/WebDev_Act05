@@ -3,6 +3,8 @@
 body{
     background-color: #F1F1F1F1;
 }
+
+.page    { display: none; padding: 0 0.5em; }
 /* navigation bar settings  */
 
 img.navbar-logo {
@@ -26,3 +28,66 @@ p.profile-course {
 .col-6 {
     border: 1px solid red;
 } */
+
+/* loading Settings */
+.box1{
+    width:100px;
+    height:100px;
+    background:rgba(3,169,244 ,1);
+    position:absolute;
+    top:50px;
+    left:20%;
+    margin-left:-100px;
+    -webkit-animation:leftbox 2s infinite;
+  }
+  
+  .box2{
+    width:100px;
+    height:100px;
+    background:rgba(244,67,54,1);
+    position:absolute;
+    top:50px;
+    left:90%;
+    margin-left:-100px;
+    -webkit-animation:rightbox 2s infinite;
+  }
+  
+  .box3{
+    width:100px;
+    height:100px;
+    background:rgba(76,175,80 ,1);
+    position:absolute;
+    top:300px;
+    left:20%;
+    margin-left:-100px;
+    -webkit-animation:moveup 2s infinite;
+  }
+  
+  .box4{
+    width:100px;
+    height:100px;
+    background:rgba(255,87,34 ,1);
+    position:absolute;
+    top:300px;
+    left:90%;
+    margin-left:-100px;
+    -webkit-animation:moveup 2s infinite;
+  }
+  
+  @-webkit-keyframes leftbox{
+    0%{left:20%;}
+    50%{left:45%;}
+    100%{left:20%;}
+  }
+  
+  @-webkit-keyframes rightbox{
+    0%{left:90%;}
+    50%{left:55%;}
+    100%{left:90%;}
+  }
+  
+  @-webkit-keyframes moveup{
+    0%{top:50%;}
+    50%{top:10%;}
+    100%{top:50%;}
+  }
